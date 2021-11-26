@@ -7,7 +7,6 @@ import { Delete } from '@mui/icons-material';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import { useDispatch } from 'react-redux';
 import { toggleToDo, deleteToDo, updateToDo } from '../../Redux/ToDo/actions';
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 
 function ToDoItem({ data }) {
     const [display, setDisplay] = useState(false);

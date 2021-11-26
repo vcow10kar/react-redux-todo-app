@@ -45,7 +45,7 @@
 .modalParent {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .modalParent > * {
@@ -59,8 +59,9 @@
     background-color: var(---secondary-color);
     color: white;
     font-weight: 800;
-    top: 40%;
-    left: calc(50% - 200px);
+    /* top: 40%;
+    left: 30%; */
+    margin-top: 40vh;
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -70,7 +71,7 @@
 
 .modalDiv > * {
     margin: auto 0px;
-    font-size: 2.2vh;
+    font-size: 22px;
 }
 
 .titleTag {
