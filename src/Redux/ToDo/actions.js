@@ -1,4 +1,4 @@
-import {ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "./actionTypes";
+import {ADD_TODO, TOGGLE_TODO, DELETE_TODO, UPDATE_TODO } from "./actionTypes";
 import {v4 as uuid} from 'uuid';
 
 function addToDo(payload) {
@@ -26,5 +26,12 @@ function deleteToDo(payload) {
     };
 }
 
+function updateToDo(payload) {
+    return {
+        type: UPDATE_TODO,
+        payload: payload
+    };
+}
 
-export {addToDo, toggleToDo, deleteToDo};
+
+export {addToDo, toggleToDo, deleteToDo, updateToDo};

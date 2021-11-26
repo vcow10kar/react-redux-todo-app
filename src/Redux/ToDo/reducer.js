@@ -1,4 +1,4 @@
-import {ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "./actionTypes";
+import {ADD_TODO, TOGGLE_TODO, DELETE_TODO, UPDATE_TODO } from "./actionTypes";
 
 const initState = {
     todos: []
@@ -25,6 +25,13 @@ const reducer = (state = initState, {type, payload}) => {
                 ...state,
                 todos: state.todos.filter(item => (item.id === payload ? false : true))
             };
+        }
+
+        case UPDATE_TODO: {
+            return {
+                ...state,
+                todos: state.todos.map(item => (item.id === payload.id ? {...item, title: payload.title} : item))
+            }
         }
 
         default: {
