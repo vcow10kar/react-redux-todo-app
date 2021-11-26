@@ -1,0 +1,68 @@
+.toDo {
+    width: 80%;
+    margin: auto;
+}
+
+.toDoInput > form {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toDoList {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.toDoItem {
+    min-width: 300px;
+    padding: 15px;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(---secondary-color);
+    border-radius: 5px;
+}
+
+.toDoItem > p {
+    margin: auto 0px;
+    font-weight: 700;
+}
+
+.modal {
+    width: 80%;
+}
+
+.modalDiv {
+    min-width: 250px;
+    /* transform: 'translate(-50%, -50%)'; */
+    position: absolute;
+    background-color: var(---secondary-color);
+    color: white;
+    font-weight: 800;
+    top: 40%;
+    left: calc(50% - 145px);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalDiv > * {
+    margin: auto 0px;
+    font-size: 2.2vh;
+}
+
+.titleTag {
+    width: inherit;
+    overflow-x: auto;
+}
